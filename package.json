@@ -1,0 +1,20 @@
+{
+  "name": "logo-creation-tool",
+  "version": "1.0.0",
+  "description": "a tool for creating simple logos",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBowen96/Logo-Creation-Tool.git"
+  },
+  "author": "J Bowen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JBowen96/Logo-Creation-Tool/issues"
+  },
+  "homepage": "https://github.com/JBowen96/Logo-Creation-Tool#readme",
+  "type": "module"
+}
