@@ -12,7 +12,7 @@ This application is a tool for creating very simple logos with 3 letters and a b
 
 
 
-A full video of the application functioning can be found [here]([https://github.com/JBowen96/README-Gen/blob/main/Video/2023-09-25%2011-07-19.mp4](https://github.com/JBowen96/Logo-Creation-Tool/blob/main/Resources/2023-10-02%2013-59-17.mp4))
+A full video of the application functioning can be found [here](https://github.com/JBowen96/README-Gen/blob/main/Video/2023-09-25%2011-07-19.mp4](https://github.com/JBowen96/Logo-Creation-Tool/blob/main/Resources/2023-10-02%2013-59-17.mp4))
 
 ## Installation
 Assure that you have inquirer 9.2.0
