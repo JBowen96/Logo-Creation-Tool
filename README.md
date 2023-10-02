@@ -5,6 +5,7 @@
 This application is a tool for creating very simple logos with 3 letters and a basic colored background.
 
 ##Example
+
 ![image](https://github.com/JBowen96/Logo-Creation-Tool/assets/139276635/30e64b90-09e8-46d7-94a0-8bf277e43590)
 
 ![image](https://github.com/JBowen96/Logo-Creation-Tool/assets/139276635/d277fdb2-8ce9-4c5f-9cb6-396a20c8e725)
