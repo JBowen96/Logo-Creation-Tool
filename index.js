@@ -1,14 +1,14 @@
 import { colorsArray } from './colorsArray.js';
 import fs from 'fs';
 import path from 'path';
+const __dirname = path.resolve();
 import inquirer from 'inquirer';
-const { Circle, Square, Triangle } = import("Lib/shapes.js");
+import { Triangle, Circle, Square } from './Lib/shapes.js';
 
 
 const canvasWidth = 300;
 const canvasHeight = 200;
 
-const __dirname = path.resolve();
 
 //input questions for logo creation
 inquirer
@@ -107,3 +107,4 @@ inquirer
     .catch((error) => {
         console.error(error);
     });
+  

@@ -1,31 +1,43 @@
-//defines a shape with a color value
-class Shape{
-        
-        constructor(){
-            this.color=''
-        }
-        setColor(color){
-            this.color=(color);
-        }
+export class Triangle {
+    constructor(x, y, side) {
+      this.x = x;
+      this.y = y;
+      this.side = side;
     }
-    //defines a class for circles
-    class Circle extends Shape{
-        render(){
-            return `<circle cx="50%" cy="50%" r="100" height="100%" width="100%" fill="${this.color}">`
-        }
+  
+    render(color) {
+      const height = (Math.sqrt(3) / 2) * this.side;
+      const path = `M ${this.x} ${this.y - height / 2} ` +
+                   `L ${this.x - this.side / 2} ${this.y + height / 2} ` +
+                   `L ${this.x + this.side / 2} ${this.y + height / 2} ` +
+                   `Z`;
+      const fill = color ? `fill="${color}"` : '';
+      return `<path d="${path}" ${fill}/>`;
     }
-    //defines a class for squares
-    class Square extends Shape{
-        render(){
-            return `<rect x="50" height="200" width="200" fill="${this.color}">`
-        }
+  }
+  
+  export class Circle {
+    constructor(cx, cy, r) {
+      this.cx = cx;
+      this.cy = cy;
+      this.r = r;
     }
-    //defines a class for triangles
-    class Triangle extends Shape{
-        render(){
-            
-            return `<polygon height="100%" width="100%" points="0,200 300,200 150,0" fill="${this.color}">`
-        }
-    };
-    
-    module.exports = {Circle, Square, Triangle}
+  
+    render(color) {
+      const fill = color ? `fill="${color}"` : '';
+      return `<circle cx="${this.cx}" cy="${this.cy}" r="${this.r}" ${fill}/>`;
+    }
+  }
+  
+  export class Square {
+    constructor(x, y, side) {
+      this.x = x;
+      this.y = y;
+      this.side = side;
+    }
+  
+    render(color) {
+      const fill = color ? `fill="${color}"` : '';
+      return `<rect x="${this.x - this.side / 2}" y="${this.y - this.side / 2}" width="${this.side}" height="${this.side}" ${fill}/>`;
+    }
+  }

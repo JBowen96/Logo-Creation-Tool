@@ -12,9 +12,18 @@
   },
   "author": "J Bowen",
   "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.0"
+  },
   "bugs": {
     "url": "https://github.com/JBowen96/Logo-Creation-Tool/issues"
   },
   "homepage": "https://github.com/JBowen96/Logo-Creation-Tool#readme",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
+  }
 }
